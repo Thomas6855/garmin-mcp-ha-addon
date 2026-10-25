@@ -1,7 +1,7 @@
 name: Garmin MCP Server
 slug: garmin_mcp
 description: Private read-only Garmin Connect MCP server
-version: "0.1.0"
+version: "0.1.1"
 arch:
   - aarch64
 startup: application
@@ -11,3 +11,8 @@ ports:
   8000/tcp: 8000
 ports_description:
   8000/tcp: Garmin MCP HTTP endpoint
+
+options:
+  garmin_api_key: ""
+schema:
+  garmin_api_key: password
