@@ -1,0 +1,15 @@
+name: Garmin MCP Tunnel
+slug: garmin_tunnel
+description: Secure outbound tunnel connecting Garmin MCP to ChatGPT
+version: "0.1.0"
+arch:
+ - aarch64
+startup: application
+boot: auto
+init: false
+options:
+ tunnel_id: ""
+ openai_api_key: ""
+schema:
+ tunnel_id: str
+ openai_api_key: password
