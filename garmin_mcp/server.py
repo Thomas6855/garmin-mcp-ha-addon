@@ -31,6 +31,7 @@ def garmin_auth_test() -> str:
        return "Unable to contact Garmin API."
 
 if __name__ == "__main__":
+   print(garmin_auth_test())
    mcp.run(
        transport="http",
        host="0.0.0.0",
